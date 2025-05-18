@@ -1,466 +1,232 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)# -->
-<html lang="en" class="no-js gr__glasgowbootcamp2019_azurewebsites_net"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Season of Agents</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {/*#7b2ff7*/
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        color:#f1eefc;
+        background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/firstbg.jpg') no-repeat center center/cover;
+      }
+
+
+      .hero {
+          /* background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/firstbg.jpg') no-repeat center center/cover; */
+       /* 2nd bg => background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/d4370cfb8a33ae5556fb9587996300f4%20(2).jpg') no-repeat center center/cover;*/
+       /* 3rd bg => background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/85349a3827bb01d445d4cdd5c46a9189%20(2).jpg') no-repeat center center/cover;*/
+       /* background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center center/cover; */
+
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+
+
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.352);
+        z-index: 0;
+      }
+
+      .hero-content {
+        z-index: 10;
+      }
+
+       .bottom {
+        /* background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center/cover;*/ 
+        /* background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/gradient-dark-blue-futuristic-digital-grid-background.jpg') no-repeat center center/cover; */
+      } */
+/* .middle {
+        background: url('file:///C:/Users/adars/Desktop/AiWeb/Photos/6106991.jpg') no-repeat center center/cover;
+      }       */
+       .overlay1{
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+      }
+      
+
+      .btn {
+        @apply text-white font-semibold py-4 px-8 rounded-full transition-all duration-300;
+        background: linear-gradient(90deg, #5495ff, #7b2ff7);
+      }
+
+      .btn:hover {
+        box-shadow: 0 0 10px #7b2ff7, 0 0 20px #2577f2;
+        transform: scale(1.05);
+      }
+
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dublin - Global Azure Dublin 2024</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Dublin - Global Azure Bootcamp 2024">
-    <meta property="og:image" content="~/images/fb_img.png">
-    </head><body data-gr-c-s-loaded="true"><environment names="Development,Staging,Production">
-        <link rel="stylesheet" href="/GAB/bootstrap.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/GAB/animate.css">
-        <link rel="stylesheet" href="/GAB/slick.css">
-        <link rel="stylesheet" href="/GAB/settings.css">
-        <link rel="stylesheet" href="/GAB/site.css">
-        <link rel="stylesheet" href="/GAB/custom.css">
-        <link rel="stylesheet" href="/GAB/TimeCircles.css">
-    </environment>
-        <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
-        }({
-            instrumentationKey: '0b76bbf7-077c-4ec9-b415-112581f7567c'
-        });
+  /*  Animation starts here */
+  [data-aos='rotate-round'] {
+    transform: rotate(-360deg);
+    transition-property: transform;
+  }
+  /*  Animation ends here */
+  [data-aos='rotate-round'].aos-animate {
+    transform: rotate(0deg);
+  }
 
-        window.appInsights=appInsights;
-        appInsights.trackPageView();
-        
-    </script><script src="/GAB/ai.0.js"></script>
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+   <section class="hero relative">
 
 
 
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="fa fa-bars fa-lg"></span> </button>
-                    <a class="navbar-brand"> <img src="https://blog.globalazure.net/portals/0/images/GlobalAzure2024-250.png" height="100" width="100" alt="" class="logo"> </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        
-        <li>
-            <a class="page-scroll" href="#agenda">Agenda</a>
-        </li>
-            <li>
-                <a class="page-scroll" href="#speakers">Speakers</a>
-            </li>
-            <li>
-            <a class="page-scroll" href="#sponsors">Supported by</a>
-        </li>
-            <li>
-            <a class="page-scroll" href="#contact">Contact</a>
-        </li>
-            <li>
-            <a class="page-scroll" href="#locate">Locate</a>
-        </li>
+  <div class="overlay"></div>
+  <div class="hero-content max-w-3xl px-4">
+    <h1 class="text-3xl md:text-5xl font-bold  #6368c1 mb-4 "data-aos-once="false" data-aos="fade-down">Season of Agents</h1>
+    <p class="text-xl md:text-2xl mb-6 text-slate-200"data-aos-once="false" data-aos="fade-up">
+      A global community event by Microsoft MVPs on Copilot & Generative AI.
+    </p>
 
 
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-->
-        </nav>
-        <div class="text-center intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="divTimer">
-                                <div id="CountDownTimer" data-bgcolor="#fff" data-date="2024-04-19 09:00:00" class="centered" style="width: 100%; height:auto;" data-tc-id="854dd617-2d25-6334-9bee-79ee29d5b581">
-                            <div class="time_circles"><canvas width="1140" height="285"></canvas><div class="textDiv_Days" style="top: 100px; left: 0px; width: 285px; color: rgb(255, 255, 255);"><h4 style="font-size: 20px; line-height: 20px; color: rgb(255, 255, 255);">Days</h4><span style="font-size: 60px; line-height: 20px;">14</span></div><div class="textDiv_Hours" style="top: 100px; left: 285px; width: 285px; color: rgb(255, 255, 255);"><h4 style="font-size: 20px; line-height: 20px; color: rgb(255, 255, 255);">Hours</h4><span style="font-size: 60px; line-height: 20px;">7</span></div><div class="textDiv_Minutes" style="top: 100px; left: 570px; width: 285px; color: rgb(255, 255, 255);"><h4 style="font-size: 20px; line-height: 20px; color: rgb(255, 255, 255);">Minutes</h4><span style="font-size: 60px; line-height: 20px;">30</span></div><div class="textDiv_Seconds" style="top: 100px; left: 855px; width: 285px; color: rgb(255, 255, 255);"><h4 style="font-size: 20px; line-height: 20px; color: rgb(255, 255, 255);">Seconds</h4><span style="font-size: 60px; line-height: 20px;">24</span></div></div></div>
-                            
-        <a href="https://www.eventbrite.com/e/873228388617" class="btn btn-danger">Register Here</a>
-        <!--a href="https://sessionize.com/global-azure-bootcamp-dublin/" class="btn btn-success">Call for Speakers</a-->                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></header>
-    <div class="wrapper">
-        <section id="about">
-            <div class="container">
-                <div class="section-heading scrollpoint sp-effect3">
-                    <h1>About</h1>
-                    <div class="divider"></div>
-                    <p>Global Azure Bootcamp is a great opportunity to learn about Microsoft Azure and connect with other professionals in the industry. The event is community-driven and provides a platform for people to share their knowledge and experience with others.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="about-item scrollpoint sp-effect2">
-                            <i class="fa fa-cloud fa-2x"></i>
-                            <h3>Deep Dive Sessions</h3>
-                            <p>
-                                One full day of <b>deep dive</b> sessions on Azure for Developers and IT Pro's delivered by the experts to get you started on complex topics like Media Streaming, Mobile
-                                Services, ALM, PowerShell and IoT
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="about-item scrollpoint sp-effect5">
-                            <i class="fa fa-usd fa-2x"></i>
-                            <h3>Free registration</h3>
-                            <p>
-                                Entry to this event is totally free! 
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="about-item scrollpoint sp-effect5">
-                            <i class="fa fa-users fa-2x"></i>
-                            <h3>Discuss with Experts</h3>
-                            <p> Have questions, need to discuss your technical issues, or looking for some advise, do attend to speak to the experts </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-
-
-<!-- Contact Section -->
-<section id="agenda">
-    <div class="container">
-        <div class="section-heading scrollpoint sp-effect3">
-            <h1>Agenda</h1>
-            <div class="divider"></div>
-        </div>
-        <div class="agenda">
-            
-            <script type="text/javascript" src="https://sessionize.com/api/v2/v3x8y029/view/GridSmart"></script>
-        </div>
-        <!--div class="agenda">
-            <div class="table-responsive">
-                <table class="table table-condensed table-bordered">
-                    <thead>
-                        <tr>
-                            <th width="15%">Time</th>
-                                <th width="85%">Bootcamp Track</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                                <tr>
-                                    <td class="agenda-time">10:00 AM -10:15 AM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Registration</b><br>
-    <br>
-    <br> 
-
-    <br>
-</div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">10:15 AM - 10:45 AM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Keynote</b><br>
-    <br>
-    Keynote and Welcome to the Global Azure Bootcamp Dublin 2023edition.<br> 
- <br>
-    <br>
-</div>                                   </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">10:45 AM - 11:30 AM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Kick Start your Migration Journey</b><br>
-    <br>Start Your Migration Journey to Azure, Know Why it is the best time to migrate to Azure<br> 
-	- Tushar Kumar 
-
-    <br>
-</div>                          </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">11:30 PM - 12:30 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Migrating SQL Server workload to Azure - Things to know?</b><br>
-    <br>
-   Microsoft Azure provides different options such as Azure SQL Database, SQL Server on Azure VM and the newly release SQL managed instance, when it comes to running SQL Server workloads.
-Azure SQL Database has three deployment models and with multiple performance tiers available, it is important to find out the appropriate deployment option and the service tier before migrating to Azure. 
-In this session, Ahmad will compare the available options, migration tools and will put forth a migration plan to migrate on-premise SQL Server workloads to Azure. 
-Moreover, one lucky winner will win a signed copy of the book authored by Ahmad, Professional Azure SQL Database Administration.
-- Ahmad Osama
-</div>
-    <br>
-</div>                          </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">12:30 PM - 1:15 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Lunch</b><br>
-    <br>
-   
-    <br>
-</div>                          </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">1:15 PM - 2:15 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Serverless on Azure</b><br>
-    <br>
- Serverless is definitely here to stay, and there are also more and more frameworks meant to ease serverless containers and functions development (even across clouds) becoming stable every day. Although the idea behind serverless is not to worry about the infrastructure, you still need to worry about how long will it take to scale, and thats where things like cold starts, preheating, multiple deployments, and hybrid environments come into play. Basically, serverless is a great tool when used where needed, and that's the topic of this talk - learn how to build a serverless system, talk about some caveats, and discuss alternatives.<br> 
-- Partha Mishra
-
-    <br>
-</div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">2:15 PM - 3:15 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b> Traceable and Safe Deployments to Kubernetes using Azure Pipelines</b><br>
-    <br>
-   The talk will focus on setting up build and release pipelines for Kubernetes. Annotation based traceability is demonstrated during the talk to emphasize on how end-to-end traceability information about commits and build metadata can be added on to the Kubernetes objects being deployed. The talk will also showcase canary deployment strategy for Kubernetes and how the same can be used hand-in-hand with metric providers such as Prometheus to resume/reject a deployment based on the health and performance of the canary workload as compared to the baseline.
-    <br>
-	- Vishal Jain
-</div>
-                                </td>
-                                </tr>
-                               
-                                <tr>
-                                    <td class="agenda-time">3:15 PM - 4:45 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Integration services in Azure</b><br>- Neeraj & Govind
-    <br>
-    <br> 
-    <br>
-</div>                          </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">4:45 PM - 5:00 PM</td>
-                                    <td class="agenda-events text-center" colspan="1">
-                                        <div class="agenda-event text-left">
-    <b>Closing &amp; Networking </b><br>
-    <br>
-    <br> 
-
-    <br>
-</div>
-                                </td>
-                                </tr>
-                    </tbody>
-                </table>
-            </div-->
-        </div>
-    </div>
-</section>
-<section id="speakers" class="container content-section text-center">
-    <div class="container">
-            <div class="section-heading scrollpoint sp-effect3">
-                <h1>Speakers</h1>
-                <div class="divider"></div>
-            </div>
-            
-            <script type="text/javascript" src="https://sessionize.com/api/v2/v3x8y029/view/SpeakerWall"></script>
-            <!--center><a href="https://sessionize.com/gab-dublin/" class="btn btn-success">Call for Speakers</a></center-->
-            <!--
-                    <div class="row text-left">
-					    <div class="col-lg-6">
-                        <h2 class="col-xs-12">Vishal Jain</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/duncan.jpg"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/duncan.jpg"></div>
-                        <div class="col-xs-8">
-                            <i>Senior Program Manager at Microsoft</i>
-                             </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="col-xs-12">Tushar Kumar</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/gregor.png"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/gregor.png"></div>
-                        <div class="col-xs-8">
-                            <i>Migration Engineer @ Microsoft CSP</i>
-                            <br>
-                            <br>
-                                   
-                                    <a href="http://www.twitter.com/followtushar" class="speakersocial"><i class="fa fa-twitter fa-fw"></i></a>
-                        </div>
-                    </div>
-                
-                      
-            </div>
-            <div class="row">
-                <div class="col-xs-12" style="text-align:left;"><br></div>
-            </div>
-            <div class="row text-left">
-                    <div class="col-lg-6">
-                        <h2 class="col-xs-12">Partha Mishra</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/angel.jpg"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/angel.jpg"></div>
-                        <div class="col-xs-8">
-                            <i>Technology Solutions Professional at Microsoft</i>
-                           </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="col-xs-12">Ahmad Osama</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/ahmad.jpg"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/ahmad.jpg"></div>
-                        <div class="col-xs-8">
-                            <i>Data Engineer - Microsoft MVP Reconnect </i>
-                           </div>
-                    </div>
-                      
-            </div>
-            <div class="row">
-                <div class="col-xs-12" style="text-align:left;"><br></div>
-            </div>
-            <div class="row text-left">
-			  <div class="col-lg-6">
-                        <h2 class="col-xs-12">Neeraj Mathur</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/craig.jpg"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/craig.jpg"></div>
-                        <div class="col-xs-8">
-                            <i>Principal Application Engineer </i>
-                           </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="col-xs-12">Govind S Yadav</h2>
-                        <div class="col-xs-4 hidden-xs"><img style="width:150px; height:auto;" src="./GAB/ivan.jpg"></div>
-                        <div class="col-xs-4 visible-xs-block"><img style="width:50px; height:auto;" src="./GAB/ivan.jpg"></div>
-                        <div class="col-xs-8">
-                            <i>Technical Architect</i>
-                            </div>
-                    </div>
-                       
-            </div>
-           <br/>--> 
-        </div>
-</section>
-<section id="sponsors">
-    <div class="container">
-        <div class="section-heading scrollpoint sp-effect3">
-            <h1>Supported By</h1>
-            <div class="divider"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <a href="#" target="_blank"><img src="./GAB/codec.svg" height="100px" alt="Codec Ireland"></a><br>
-                <br>
-            </div>
-            <div class="col-lg-4 text-center">
-                <a href="#" target="_blank"><img src="./GAB/msft.png" height="100px" alt="Microsoft"></a><br>
-                <br>
-            </div>
-            <div class="col-lg-4 text-center">
-                <a href="#" target="_blank"><img src="./GAB/MVP.png" height="100px" alt="Microsoft MVP"></a><br>
-                <br>
-            </div>
-            <!--div class="col-lg-4 text-center">
-                <a href="#" target="_blank"><img src="./GAB/netmafia.png" height="100px" alt="Microsoft"></a><br>
-                <br>
-            </div-->
-        </div>
-               
-    </div>
-</section>
-
-
-<section id="contact" class="container content-section text-center">
-    <div class="container">
-        <div class="section-heading scrollpoint sp-effect3">
-            <h1>Contact </h1>
-            <div class="divider"></div>
-        </div>
-        <div class="row"> </div>
-        <!-- row -->
-        <div class="row">
-            <div class="col-lg-6">
-                <h3>Stay Connected on</h3>
-                
-<ul class="list-inline banner-social-buttons">
-                <li>
-            <a href="https://linkedin.com/in/followtushar" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-        </li>
-        </ul> 
-            </div>
-            <div class="col-lg-6">
-                <h3>Write to us at</h3>
-                
-<ul class="dl-horizontal">
-            <li class="fa fa-envelope list-group-item">
-                <a href="mailto:followtushar@outlook.com" target="_blank">Tushar Kumar</a>
-            </li>
-</ul>
-
-            </div>
-        </div>
-        <!-- row -->
-    </div>
-   
-</section>
-
-<section id="locate">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="map" data-latitude="28.489357" data-longitude="77.092019"></div>
-                <br>
-			
-                <div class="text-center"><b>Date:</b> Friday, 19th April, 2024</div>
-                <div class="text-center"><b>Venue:</b> Address: One Microsoft Place, South County Business Park, Leopardstown, Dublin 18 D18 P521 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Map Section -->
-</section>
-
-
-
-    </div>
-    <footer>
-        <div class="large_white_light sft" data-x="center" data-y="250" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
-            [ 
-       Hosted on
-            <a href="https://azure.microsoft.com/en-us/" target="_blank">Microsoft Azure</a> Theme
-            <a href="https://www.scoopthemes.com/templates/Oleose/Freeze/" target="_blank">Freeze</a> ]
-        </div>
-    </footer>
-
-   
-    <environment names="Development,Staging,Production">
-        <script src="./GAB/jquery.js"></script>
-        <script src="./GAB/jquery-ui.min.js"></script>
-        <script src="./GAB/bootstrap.js"></script>
-        <!-- Animation JS -->
-        <script src="./GAB/slick.min.js" asp-append-version="true"></script>
-        <script src="./GAB/placeholdem.min.js"></script>
-        <script src="./GAB/jquery.themepunch.plugins.min.js" asp-append-version="true"></script>
-        <script src="./GAB/jquery.themepunch.revolution.min.js" asp-append-version="true"></script>
-        <script src="./GAB/waypoints.min.js" asp-append-version="true"></script>
-
-        <!--Custom JS-->
-
-        <script src="./GAB/TimeCircles.js" asp-append-version="true"></script>
-        <script src="./GAB/site.js" asp-append-version="true"></script>
-        <script src="./GAB/custom.js" asp-append-version="true"></script>
-
-    </environment>
     
-    <script>
-        $(document).ready(function () {
-            appMaster.preLoader();
-        });
-    </script>
+    <!-- LARGER BUTTONS -->
+   <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos-once="false" data-aos="zoom-in">
+      <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/"
+       class="btn 
+            font-bold 
+            py-4
+            px-10 
+            rounded-full
+            text-lg
+            shadow-lg 
+            transition-all 
+            duration-300" 
+            style="background: linear-gradient(90deg,  #00f0ff,  #6f1df4);"
+        >
+        Call for Speakers
+      </a>
+      <a href="https://www.pokemon.com/us"
+      class="btn 
+        font-bold 
+        py-4 px-10 
+        rounded-full 
+        text-lg 
+        shadow-lg 
+        transition-all 
+        duration-300" 
+        style="background: linear-gradient(90deg, #100b95, #00f0ff);"
+      >
+        Register
+      </a>
+    </div>
+
+ <!-- Tiny Robot Image (Button-Sized) -->
+<div data-aos="rotate-round" class="mt-20 md:mt-">
+  <img
+    src="file:///C:/Users/adars/Desktop/AiWeb/Photos/Cartoon_Robot.svg.png"
+    alt="Cartoon Robot"
+    class="w-40 h-60 md:w-14 md:h-10 object-contain rounded-full shadow-md"
+  />
+</div>
 
 
-</body></html>
+  <!-- Scroll Down -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-slate-400 text-xs md:text-sm animate-bounce flex flex-col items-center">
+  <span class="mb-1">Scroll Down</span>
+  <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
+  </div>
+
+</section>
+
+    <!-- EVENT DETAILS SECTION -->
+    <section class="middle px-6 md:px-20">
+      <h2 class="text-2xl md:text-3xl font-semibold text-indigo-400 mb-6 text-center"data-aos-once="false" data-aos="fade-up" >What is Season of Agents?</h2>
+      <p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center" data-aos-once="false" data-aos="zoom-in-up">
+                In some parts of the world, the smell of pumpkin spice is in the air which can only mean one thing – it’s time for the next “Season of Agents”! Over the summer, the inaugural “Season of Agents” was a big hit, with over 250 user groups and meetups participating around the world using talks provided on Microsoft AI topics. Beginners and seasoned pros alike shared in a global conversation about AI and learned new things to help navigate this era of AI. 
+</p>
+
+<p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center"data-aos-once="false" data-aos="zoom-in-up">
+                “Season of Agents” is a global initiative by Microsoft MVPs to empower developers, data scientists, and AI enthusiasts with practical knowledge of Copilot and generative AI through workshops, bootcamps, and community events. Spanning from May to August 2024, this season includes technical bootcamps, meetups, and workshops led by MVPs and RDs (Regional Directors) across the globe. Whether you're a student, a professional, or a curious mind, there’s something for everyone.
+     </p>
+     
+     <p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center"data-aos-once="false" data-aos="zoom-in-up">To follow up, the new “Season of AI” is shifting the conversation to “copilots.” From developer tools like GitHub Copilot and Copilot Studio to extending and using things like Copilot for Microsoft Fabric and Microsoft 365 Copilot to building your own copilot on Azure, there is lots to talk about when it comes to copilots, and we’ve prepared seven new talks to support this season! These talks cover a variety of topics and are perfect for anyone looking to expand their AI knowledge or get hands-on with the latest tools. As before, all content is published for anyone to use on GitHub at aka.ms/CommunityContentRepo. 
+         </p>
+
+      <p class="mb-4 max-w-4xl mx-auto text-slate-300 text-center"data-aos-once="false" data-aos="zoom-in-up">
+        Running from May to August 2024, join experts in interactive sessions across the world, online and offline.
+      </p>
+
+    </section> 
+
+    <!-- EVENT DETAILS SECTION-->
+
+
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="bottom text-center py-16">
+      <div class="flex justify-center  gap-6">
+        <div class="overlay"></div>
+        <a href="https://www.pokemon.com/us" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Register</a>
+        <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Call for Speakers</a>
+      </div>
+      <p class="mt-8 text-sm text-slate-400   #00f0ff">
+        &copy; 2025 Season of Agents — A Microsoft MVP initiative
+      </p>
+    </section>
+
+  <!-- MAP SECTION -->
+<section class="bg-[#0f172a] py-20 px-4 md:px-14 rounded-t-3xl shadow-inner mt-20">
+  <h2 class="text-3xl md:text-4xl font-semibold text-white mb-10 text-center" data-aos="fade-up" data-aos-once="false">Venue Location</h2>
+
+  <div class="flex flex-col md:flex-row gap-8 items-center md:items-start justify-center max-w-6xl mx-auto bg-[#1e293b] rounded-xl p-8 shadow-2xl"data-aos-once="false" data-aos="fade-up">
+    <!-- Map -->
+    <div class="w-full md:w-2/3 h-[400px] rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.240182110933!2d-6.215117423059448!3d53.27654727229851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709430ebde27d%3A0xb6c7f7e6d3c56cc1!2sCarmanhall%20And%20Leopardstown%2C%20Dublin%2C%20D18%20DH6K%2C%20Ireland!5e0!3m2!1sen!2sin!4v1716015183773!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Address -->
+    <div class="w-full md:w-1/3 text-slate-300 text-center md:text-left">
+      <h3 class="text-xl font-semibold text-white mb-4">Event Venue</h3>
+      <p class="text-lg leading-relaxed text-white">
+        Carmanhall And Leopardstown,<br />
+        Dublin, D18 DH6K,<br />
+        Ireland
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+  </body>
+
+</html>
