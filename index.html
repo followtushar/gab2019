@@ -1,253 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- AOS CSS -->
+<head>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- PapaParse -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Season of Agents</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      body {/*#7b2ff7*/
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        color:#f1eefc;
-        background: url('./Photos/firstbg.jpg') no-repeat center center/cover;
-      }
 
 
-      .hero {
-          /* background: url('./Photos/firstbg.jpg') no-repeat center center/cover; */
-       /* 2nd bg => background: url('./Photos/d4370cfb8a33ae5556fb9587996300f4%20(2).jpg') no-repeat center center/cover;*/
-       /* 3rd bg => background: url('./Photos/85349a3827bb01d445d4cdd5c46a9189%20(2).jpg') no-repeat center center/cover;*/
-       /* background: url('./Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center center/cover; */
+  <style>
+    body {
+      background: linear-gradient(to bottom right,  #3d351a, #1e3a8a);
+    }
+    #podcaster-image {
+  transition: opacity 0.3s ease-in-out;
 
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
+}
 
 
-      }
 
-      .overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.352);
-        z-index: 0;
-      }
+.centered-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+}
 
-      .hero-content {
-        z-index: 10;
-      }
+.centered-video-container iframe {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
-       .bottom {
-        /* background: url('./Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center/cover;*/ 
-        /* background: url('./Photos/gradient-dark-blue-futuristic-digital-grid-background.jpg') no-repeat center center/cover; */
-      } */
-/* .middle {
-        background: url('./Photos/6106991.jpg') no-repeat center center/cover;
-      }       */
-       .overlay1{
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 0;
-      }
+
+    .swiper {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    padding: 10px;
+  }
+}
+
+  </style>
+</head>
+<body class="text-white font-sans">
+
+
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-left px-4 relative overflow-hidden">
+    
+    <!-- Background Glow -->
+    <div class="absolute w-[500px] h-[500px] bg-blue-600 opacity-20 rounded-full blur-3xl top-[-100px] left-[-100px] z-0 animate-pulse"></div>
+    
+    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between max-w-6xl w-full gap-8">
       
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight text-white flex items-center gap-2">
+  <span>12 Reasons</span>
+  <span style="color:  #b69a36"; class=" text-6xl md:text-7xl font-extrabold" data-aos="fade" data-aos-delay="500">Why?</span>
 
-      .btn {
-        @apply text-white font-semibold py-4 px-8 rounded-full transition-all duration-300;
-        background: linear-gradient(90deg, #5495ff, #7b2ff7);
-      }
-
-      .btn:hover {
-        box-shadow: 0 0 10px #7b2ff7, 0 0 20px #2577f2;
-        transform: scale(1.05);
-      }
-
-    
-  /*  Animation starts here */
-  [data-aos='rotate-round'] {
-    transform: rotate(-360deg);
-    transition-property: transform;
-  }
-  /*  Animation ends here */
-  [data-aos='rotate-round'].aos-animate {
-    transform: rotate(0deg);
-  }
-
-    </style>
-  </head>
-  <body>
-    <!-- Hero Section -->
-   <section class="hero relative">
+</h1>
 
 
+        <p style="color:  #b69a36"; class="text-xl md:text-2xl mb-8 max-w-xl" data-aos="fade-up">
+          By Tushar Sharma  <span class="text-blue-200 font-semibold">Watch Latest Episodes Here!</span>
+        </p>
+        <a href="#scroll-next" class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-full text-white text-lg shadow-lg hover:scale-105 duration-300">
+          🎧 Know More 
+        </a>
+      </div>
 
-  <div class="overlay"></div>
-  <div class="hero-content max-w-3xl px-4">
-    <h1 class="text-3xl md:text-5xl font-bold  #6368c1 mb-4 "data-aos-once="false" data-aos="fade-down">Season of Agents - Dublin </h1>
-    <p class="text-xl md:text-2xl mb-6 text-slate-200"data-aos-once="false" data-aos="fade-up">
-      16th May 2024
-    </p>
+   
 
+     <!-- Podcaster Image Carousel -->
+<div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-duration="1200"> 
+  <img id="podcaster-image" src="assets/tushar.png" alt="Podcaster"
+       class="rounded-full border-1 border-orange-500 shadow-lg w-80 h-80 object-cover" />
+</div>
 
-    
-    <!-- LARGER BUTTONS -->
-   <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos-once="false" data-aos="zoom-in">
-      <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/"
-       class="btn 
-            font-bold 
-            py-4
-            px-10 
-            rounded-full
-            text-lg
-            shadow-lg 
-            transition-all 
-            duration-300" 
-            style="background: linear-gradient(90deg,  #00f0ff,  #6f1df4);"
-        >
-        Call for Speakers
-      </a>
-      <a href="https://www.eventbrite.com/e/season-of-agents-2025-dublin-tickets-1370228784179?aff=oddtdtcreator"
-      class="btn 
-        font-bold 
-        py-4 px-10 
-        rounded-full 
-        text-lg 
-        shadow-lg 
-        transition-all 
-        duration-300" 
-        style="background: linear-gradient(90deg, #100b95, #00f0ff);"
-      >
-        Register
-      </a>
+<script class="rounded-full border-1 border-orange-500 shadow-lg w-80 h-80 object-cover" >
+  const images = [
+    "assets/tushar.png",  // Your actual image
+    "assets/charizard.jpeg",  // Placeholder 1
+    "assets/dragonite.jpg",  // Placeholder 2
+    "pikachu.webp",  // Placeholder 3
+    "assets/greeninja.png"   // Placeholder 4
+  ];
+
+  let index = 0;
+  const imageEl = document.getElementById("podcaster-image");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    if (images[index]) {
+      imageEl.classList.add("opacity-0");
+      setTimeout(() => {
+        imageEl.src = images[index];
+        imageEl.classList.remove("opacity-0");
+      }, 300);
+    }
+  }, 2000); // Change every 3 seconds
+</script> 
+
+    <!-- Scroll Down Icon -->
+    <div class="absolute bottom-1 right-0 z-10 flex justify-center w-full animate-bounce">
+      <a href="#scroll-next" class="text-blue-300 text-3xl"></a>
     </div>
+  </section>
 
- <!-- Tiny Robot Image (Button-Sized) -->
-<div data-aos="rotate-round" class="mt-20 md:mt-">
-  <img
-    src="./Photos/Cartoon_Robot.svg.png"
-    alt="Cartoon Robot"
-    class="w-40 h-60 md:w-14 md:h-10 object-contain rounded-full shadow-md"
-  />
+  <!-- Dummy Section: Scroll Target -->
+  <section id="scroll-next" class="min-h-screen flex items-center justify-center text-center px-4 bg-[#1e293b]">
+    <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1200">
+      <h2 class="text-3xl font-bold mb-4">More Coming Soon</h2>
+      <p class="text-lg text-blue-100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, nec aliquam nisl nunc eget nunc. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </section>
+
+ <!-- <section class="py-16 bg-gray-950 text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-10 text-center">🎙️ Featured Podcasts</h2>
+    <div id="podcast-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+  </div>
+</section> -->
+
+<section class="py-16 bg-gray-950 text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-10 text-center">🎙️ Featured Podcasts</h2>
+    
+    <!-- Swiper Container -->
+     <div class="relative">
+    <div class="swiper mySwiper w-full">
+      <div class="swiper-wrapper" id="podcast-grid">
+        <!-- Slides will be inserted here by JS -->
+      </div>
+    <!-- Arrows (Navigation buttons) -->
+    <div style="color: antiquewhite;" class="swiper-button-prev !text-white !left-0 z-10"></div>
+    <div style="color: antiquewhite;" class="swiper-button-next !text-white !right-0 z-10"></div>
+
+    </div>
+    </div>
+        </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Modal -->
+<div id="video-modal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50">
+  <!-- <div class="bg-black w-full max-w-3xl mx-auto aspect-video relative"> -->
+    <div class="bg-black w-full max-w-5xl mx-auto aspect-video relative">
+
+    <iframe id="modal-iframe" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-3xl">&times;</button>
+  </div>
 </div>
 
 
-  <!-- Scroll Down -->
-  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-slate-400 text-xs md:text-sm animate-bounce flex flex-col items-center">
-  <span class="mb-1">Scroll Down</span>
-  <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-  </svg>
-</div>
-  </div>
-
-</section>
-
-    <!-- EVENT DETAILS SECTION -->
-    <section class="middle px-6 md:px-20">
-      <h2 class="text-2xl md:text-3xl font-semibold text-indigo-400 mb-6 text-center"data-aos-once="false" data-aos="fade-up" >What is Season of Agents?</h2>
-      <p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center" data-aos-once="false" data-aos="zoom-in-up">
-                In some parts of the world, the smell of pumpkin spice is in the air which can only mean one thing – it’s time for the next “Season of Agents”! Over the summer, the inaugural “Season of Agents” was a big hit, with over 250 user groups and meetups participating around the world using talks provided on Microsoft AI topics. Beginners and seasoned pros alike shared in a global conversation about AI and learned new things to help navigate this era of AI. 
-</p>
-
-<p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center"data-aos-once="false" data-aos="zoom-in-up">
-                “Season of Agents” is a global initiative by Microsoft MVPs to empower developers, data scientists, and AI enthusiasts with practical knowledge of Copilot and generative AI through workshops, bootcamps, and community events. Spanning from May to August 2024, this season includes technical bootcamps, meetups, and workshops led by MVPs and RDs (Regional Directors) across the globe. Whether you're a student, a professional, or a curious mind, there’s something for everyone.
-     </p>
-     
-    
-
-    </section> 
-
-    <!-- EVENT DETAILS SECTION-->
 
 
 
-    <!-- FINAL CALL TO ACTION -->
-    <section class="bottom text-center py-16">
-      <div class="flex justify-center  gap-6">
-        <div class="overlay"></div>
-        <a href="https://www.pokemon.com/us" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Register</a>
-        <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Call for Speakers</a>
-      </div>
-      <p class="mt-8 text-sm text-slate-400   #00f0ff">
-        &copy; 2025 Season of Agents — A Microsoft MVP initiative
-      </p>
-    </section>
-<section id="sponsors" class="py-16 bg-[#0f172a]">
-  <div class="max-w-5xl mx-auto px-4">
-    <div class="mb-10 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Supported By</h1>
-      <div class="w-24 h-1 mx-auto bg-gradient-to-r from-blue-400 to-purple-500 rounded"></div>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
-      <div class="flex-1 flex flex-col items-center">
-        <a href="#" target="_blank">
-          <img src="./GAB/codec.svg" class="h-24 object-contain mb-2" alt="Codec Ireland">
-        </a>
-      </div>
-      <div class="flex-1 flex flex-col items-center">
-        <a href="#" target="_blank">
-          <img src="./GAB/msft.png" class="h-24 object-contain mb-2" alt="Microsoft">
-        </a>
-      </div>
-      <div class="flex-1 flex flex-col items-center">
-        <a href="#" target="_blank">
-          <img src="./GAB/MVP.png" class="h-24 object-contain mb-2" alt="Microsoft MVP">
-        </a>
-      </div>
-    
-    </div>
-  </div>
-</section>
-<section class="bg-[#0f172a] py-20 px-4 md:px-14 rounded-t-3xl shadow-inner mt-20">
-  <h2 class="text-3xl md:text-4xl font-semibold text-white mb-10 text-center" data-aos="fade-up" data-aos-once="false">Venue Location</h2>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-  <div class="flex flex-col md:flex-row gap-8 items-center md:items-start justify-center max-w-6xl mx-auto bg-[#1e293b] rounded-xl p-8 shadow-2xl"data-aos-once="false" data-aos="fade-up">
-    <!-- Map -->
-    <div class="w-full md:w-2/3 h-[400px] rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.240182110933!2d-6.215117423059448!3d53.27654727229851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709430ebde27d%3A0xb6c7f7e6d3c56cc1!2sCarmanhall%20And%20Leopardstown%2C%20Dublin%2C%20D18%20DH6K%2C%20Ireland!5e0!3m2!1sen!2sin!4v1716015183773!5m2!1sen!2sin"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <!-- Address -->
-    <div class="w-full md:w-1/3 text-slate-300 text-center md:text-left">
-      <h3 class="text-xl font-semibold text-white mb-4">Event Venue</h3>
-      <p class="text-lg leading-relaxed text-white">
-        Carmanhall And Leopardstown,<br />
-        Dublin, D18 DH6K,<br />
-        Ireland
-      </p>
-    </div>
-  </div>
-</section>
+  <!-- SwiperJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
+<!-- <div id="podcast-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div> -->
 
-    <!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true
+  function getYouTubeVideoId(url) {
+    const regExp = /(?:youtube\.com\/.*v=|youtu\.be\/)([^&?]+)/;
+    const match = url.match(regExp);
+    return match ? match[1] : null;
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("video-modal");
+    const iframe = document.getElementById("modal-iframe");
+    iframe.src = "";
+    modal.classList.add("hidden");
+  }
+
+  function openModal(videoId) {
+    const modal = document.getElementById("video-modal");
+    const iframe = document.getElementById("modal-iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    modal.classList.remove("hidden");
+  }
+
+  // Load CSV and generate cards
+  fetch("podcasts.csv")
+    .then(response => response.text())
+   .then(csv => {
+  const data = Papa.parse(csv, { header: true }).data;
+  console.log("Parsed CSV Data:", data); 
+
+  const container = document.getElementById("podcast-grid");
+
+  data.forEach(podcast => {
+    const videoId = getYouTubeVideoId(podcast.video_url);
+    console.log("Video ID:", videoId); 
+
+    if (!videoId) return;
+
+    // const card = document.createElement("div");
+    // card.className = "cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
+    const card = document.createElement("div");
+card.className = "swiper-slide cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
+
+    card.innerHTML = `
+      <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${podcast.title}" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">${podcast.title}</h3>
+      </div>
+    `;
+
+    card.addEventListener("click", () => openModal(videoId));
+    container.appendChild(card);
   });
+});
+
 </script>
 
 
-  </body>
 
+<!-- <script>
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1200, 
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.2,
+    },
+    768: {
+      slidesPerView: 3.2,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
+}); -->
+
+
+<script>
+// After appending all slides
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1200, 
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.2,
+    },
+    768: {
+      slidesPerView: 3.2,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
+});
+
+
+
+
+</script> 
+<!-- Centered Video Below -->
+<div class="centered-video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2lehPYCyvyE?si=RgydA6JMX7mh1hic"
+   title="YouTube video player"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+    loading="lazy"
+    >
+</iframe>
+</div>
+
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4tjsvlsvYIk?si=r40bDDGr2lSklh8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
+</body>
 </html>
-git config --global user.email "tushar@theazway.com"
-  git config --global user.name "Tushar"

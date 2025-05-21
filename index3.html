@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Season of Agents</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {/*#7b2ff7*/
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        color:#f1eefc;
+        background: url('./Photos/firstbg.jpg') no-repeat center center/cover;
+      }
+
+
+      .hero {
+          /* background: url('./Photos/firstbg.jpg') no-repeat center center/cover; */
+       /* 2nd bg => background: url('./Photos/d4370cfb8a33ae5556fb9587996300f4%20(2).jpg') no-repeat center center/cover;*/
+       /* 3rd bg => background: url('./Photos/85349a3827bb01d445d4cdd5c46a9189%20(2).jpg') no-repeat center center/cover;*/
+       /* background: url('./Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center center/cover; */
+
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+
+
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.352);
+        z-index: 0;
+      }
+
+      .hero-content {
+        z-index: 10;
+      }
+
+       .bottom {
+        /* background: url('./Photos/7f8548e71fa341eefd2e7a6458a3e2be%20(2).jpg') no-repeat center/cover;*/ 
+        /* background: url('./Photos/gradient-dark-blue-futuristic-digital-grid-background.jpg') no-repeat center center/cover; */
+      } */
+/* .middle {
+        background: url('./Photos/6106991.jpg') no-repeat center center/cover;
+      }       */
+       .overlay1{
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+      }
+      
+
+      .btn {
+        @apply text-white font-semibold py-4 px-8 rounded-full transition-all duration-300;
+        background: linear-gradient(90deg, #5495ff, #7b2ff7);
+      }
+
+      .btn:hover {
+        box-shadow: 0 0 10px #7b2ff7, 0 0 20px #2577f2;
+        transform: scale(1.05);
+      }
+
+    
+  /*  Animation starts here */
+  [data-aos='rotate-round'] {
+    transform: rotate(-360deg);
+    transition-property: transform;
+  }
+  /*  Animation ends here */
+  [data-aos='rotate-round'].aos-animate {
+    transform: rotate(0deg);
+  }
+
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+   <section class="hero relative">
+
+
+
+  <div class="overlay"></div>
+  <div class="hero-content max-w-3xl px-4">
+    <h1 class="text-3xl md:text-5xl font-bold  #6368c1 mb-4 "data-aos-once="false" data-aos="fade-down">Season of Agents - Dublin </h1>
+    <p class="text-xl md:text-2xl mb-6 text-slate-200"data-aos-once="false" data-aos="fade-up">
+      16th May 2024
+    </p>
+
+
+    
+    <!-- LARGER BUTTONS -->
+   <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos-once="false" data-aos="zoom-in">
+      <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/"
+       class="btn 
+            font-bold 
+            py-4
+            px-10 
+            rounded-full
+            text-lg
+            shadow-lg 
+            transition-all 
+            duration-300" 
+            style="background: linear-gradient(90deg,  #00f0ff,  #6f1df4);"
+        >
+        Call for Speakers
+      </a>
+      <a href="https://www.eventbrite.com/e/season-of-agents-2025-dublin-tickets-1370228784179?aff=oddtdtcreator"
+      class="btn 
+        font-bold 
+        py-4 px-10 
+        rounded-full 
+        text-lg 
+        shadow-lg 
+        transition-all 
+        duration-300" 
+        style="background: linear-gradient(90deg, #100b95, #00f0ff);"
+      >
+        Register
+      </a>
+    </div>
+
+ <!-- Tiny Robot Image (Button-Sized) -->
+<div data-aos="rotate-round" class="mt-20 md:mt-">
+  <img
+    src="./Photos/Cartoon_Robot.svg.png"
+    alt="Cartoon Robot"
+    class="w-40 h-60 md:w-14 md:h-10 object-contain rounded-full shadow-md"
+  />
+</div>
+
+
+  <!-- Scroll Down -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-slate-400 text-xs md:text-sm animate-bounce flex flex-col items-center">
+  <span class="mb-1">Scroll Down</span>
+  <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
+  </div>
+
+</section>
+
+    <!-- EVENT DETAILS SECTION -->
+    <section class="middle px-6 md:px-20">
+      <h2 class="text-2xl md:text-3xl font-semibold text-indigo-400 mb-6 text-center"data-aos-once="false" data-aos="fade-up" >What is Season of Agents?</h2>
+      <p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center" data-aos-once="false" data-aos="zoom-in-up">
+                In some parts of the world, the smell of pumpkin spice is in the air which can only mean one thing – it’s time for the next “Season of Agents”! Over the summer, the inaugural “Season of Agents” was a big hit, with over 250 user groups and meetups participating around the world using talks provided on Microsoft AI topics. Beginners and seasoned pros alike shared in a global conversation about AI and learned new things to help navigate this era of AI. 
+</p>
+
+<p class="mb-4 max-w-4xl mx-auto text-slate-300 text-lg text-center"data-aos-once="false" data-aos="zoom-in-up">
+                “Season of Agents” is a global initiative by Microsoft MVPs to empower developers, data scientists, and AI enthusiasts with practical knowledge of Copilot and generative AI through workshops, bootcamps, and community events. Spanning from May to August 2024, this season includes technical bootcamps, meetups, and workshops led by MVPs and RDs (Regional Directors) across the globe. Whether you're a student, a professional, or a curious mind, there’s something for everyone.
+     </p>
+     
+    
+
+    </section> 
+
+    <!-- EVENT DETAILS SECTION-->
+
+
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="bottom text-center py-16">
+      <div class="flex justify-center  gap-6">
+        <div class="overlay"></div>
+        <a href="https://www.pokemon.com/us" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Register</a>
+        <a href="https://sessionize.com/global-azure-bootcamp-dublin-theazway-c/" class="btn  py-4 px-10"data-aos="zoom-in" data-aos-once="false" data-aos-delay="500">Call for Speakers</a>
+      </div>
+      <p class="mt-8 text-sm text-slate-400   #00f0ff">
+        &copy; 2025 Season of Agents — A Microsoft MVP initiative
+      </p>
+    </section>
+<section id="sponsors" class="py-16 bg-[#0f172a]">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="mb-10 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Supported By</h1>
+      <div class="w-24 h-1 mx-auto bg-gradient-to-r from-blue-400 to-purple-500 rounded"></div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+      <div class="flex-1 flex flex-col items-center">
+        <a href="#" target="_blank">
+          <img src="./GAB/codec.svg" class="h-24 object-contain mb-2" alt="Codec Ireland">
+        </a>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <a href="#" target="_blank">
+          <img src="./GAB/msft.png" class="h-24 object-contain mb-2" alt="Microsoft">
+        </a>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <a href="#" target="_blank">
+          <img src="./GAB/MVP.png" class="h-24 object-contain mb-2" alt="Microsoft MVP">
+        </a>
+      </div>
+    
+    </div>
+  </div>
+</section>
+<section class="bg-[#0f172a] py-20 px-4 md:px-14 rounded-t-3xl shadow-inner mt-20">
+  <h2 class="text-3xl md:text-4xl font-semibold text-white mb-10 text-center" data-aos="fade-up" data-aos-once="false">Venue Location</h2>
+
+  <div class="flex flex-col md:flex-row gap-8 items-center md:items-start justify-center max-w-6xl mx-auto bg-[#1e293b] rounded-xl p-8 shadow-2xl"data-aos-once="false" data-aos="fade-up">
+    <!-- Map -->
+    <div class="w-full md:w-2/3 h-[400px] rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.240182110933!2d-6.215117423059448!3d53.27654727229851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709430ebde27d%3A0xb6c7f7e6d3c56cc1!2sCarmanhall%20And%20Leopardstown%2C%20Dublin%2C%20D18%20DH6K%2C%20Ireland!5e0!3m2!1sen!2sin!4v1716015183773!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Address -->
+    <div class="w-full md:w-1/3 text-slate-300 text-center md:text-left">
+      <h3 class="text-xl font-semibold text-white mb-4">Event Venue</h3>
+      <p class="text-lg leading-relaxed text-white">
+        Carmanhall And Leopardstown,<br />
+        Dublin, D18 DH6K,<br />
+        Ireland
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+  </body>
+
+</html>
