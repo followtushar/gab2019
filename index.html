@@ -17,34 +17,45 @@
       <!-- AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Season of Agents</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Season of Agents</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <style>
+<style>
+  .hero-bg {
+    background: linear-gradient(
+        rgba(237, 239, 247, 0.3),
+        rgba(13, 42, 148, 0.3)
+      ),
+      url('./Photos/bg.gif')
+        no-repeat center center/cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* GIFs loop by default when displayed as backgrounds */
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+  body {
+    background: linear-gradient(to bottom right,  #3d351a, #1e3a8a);
+  }
+  #podcaster-image {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  @media (max-width: 640px) {
     .hero-bg {
       background: linear-gradient(
-          rgba(237, 239, 247, 0.3),
-          rgba(13, 42, 148, 0.3)
+          rgba(237, 239, 247, 0.938),
+          rgba(13, 42, 148, 0.938)
         ),
         url('./Photos/bg.gif')
           no-repeat center center/cover;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      /* GIFs loop by default when displayed as backgrounds */
-    }
-    .swiper-wrapper {
-      transition-timing-function: linear !important;
-        body {
-      background: linear-gradient(to bottom right,  #3d351a, #1e3a8a);
     }
   }
-    #podcaster-image {
-  transition: opacity 0.3s ease-in-out;
 
-}
 
 
 
