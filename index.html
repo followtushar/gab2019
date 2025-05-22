@@ -8,10 +8,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Swiper Carousel CSS -->
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- PapaParse -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Season of Agents</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <style>
     .hero-bg {
       background: linear-gradient(
-          rgba(13, 42, 148, 0.3),
+          rgba(237, 239, 247, 0.3),
           rgba(13, 42, 148, 0.3)
         ),
         url('./Photos/bg.gif')
@@ -23,7 +37,47 @@
     }
     .swiper-wrapper {
       transition-timing-function: linear !important;
+        body {
+      background: linear-gradient(to bottom right,  #3d351a, #1e3a8a);
     }
+  }
+    #podcaster-image {
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+.centered-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.centered-video-container iframe {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+    .swiper {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    padding: 10px;
+  }
+}
+
+
+    
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -35,17 +89,29 @@
         <div class="md:w-1/2 flex justify-center py-12"></div>
         <!-- Right: Text -->
         <div class="md:w-1/2 flex flex-col items-center md:items-end text-center md:text-right py-12">
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg max-w-full leading-tight">
-                "12 Reason Why"
-            </h1>
-            <h2 class="text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg max-w-full leading-tight text-blue-200">
+            <!-- <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg max-w-full leading-tight">
+                12 Reason Why
+            </h1> -->
+             <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight text-white flex items-center gap-2">
+  <span>12 Reasons</span>
+  <span style="color:  #efefef"; class=" text-6xl md:text-7xl font-extrabold" data-aos="fade" data-aos-delay="500">Why?</span>
+
+</h1>
+
+            <!-- <h2 class="text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg max-w-full leading-tight text-blue-200">
                 <span class="text-xl sm:text-2xl md:text-4xl align-top">with</span>
                 <span class="text-white">Tech Experts</span>
-            </h2>
-            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-blue-200 max-w-2xl drop-shadow-md">
+            </h2> -->
+
+            <h2 class="text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg max-w-full leading-tight text-blue-200"data-aos="zoom-in-up">
+  <span class="text-xl sm:text-2xl md:text-4xl align-top">with</span>
+  <span class="text-white text-lg sm:text-xl md:text-5xl">Tech Experts</span>
+</h2>
+
+            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-blue-200 max-w-2xl drop-shadow-md" data-aos="zoom-in-up">
                 Dive deep into Microsoft technology with industry leaders and innovators
             </p>
-            <a href="#about" class="mt-10 inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-100 transition">
+            <a href="#about" class="mt-10 inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-100 transition" data-aos="zoom-in">
                 🎧 Know More 
             </a>
         </div>
@@ -55,13 +121,13 @@
   <!-- About Section Full Width with Image -->
   <section id="about" class="w-full bg-white py-16 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-4 sm:px-6 gap-12">
     <div class="md:w-1/2 w-full">
-      <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 hover:bg-blue-100"data-aos="fade-up"  data-aos-duration="1200">
         About the Podcast
       </h2>
-      <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+      <p class="text-gray-700 text-base sm:text-lg leading-relaxed" data-aos="fade-up"  data-aos-duration="1600">
         <strong>12 Reason Why with Tech Experts</strong> is your go-to podcast for everything Microsoft technology. Featuring candid conversations with MVPs, developers, and IT pros, we explore the top reasons why Microsoft’s ecosystem is transforming the tech landscape. Stay ahead with insights, tips, and stories that empower your career and projects.
       </p>
-      <a href="https://sessionize.com/12-reasons-why-with-tech-experts/?e=327541" target="_blank" rel="noopener" class="mt-8 inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+      <a href="https://sessionize.com/12-reasons-why-with-tech-experts/?e=327541" target="_blank" rel="noopener" class="mt-8 inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition" data-aos="zoom-in-up" data-aos-duration="2000">
         Submit Your Session on Sessionize
       </a>
     </div>
@@ -74,48 +140,136 @@
     </div>
   </section>
 
-  <!-- YouTube Podcast Carousel Full Width -->
-  <section class="w-full bg-gradient-to-r from-blue-900 to-blue-700 py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="text-white text-2xl sm:text-3xl font-bold mb-10 text-center drop-shadow-lg">
-        Watch Our Podcast Episodes
-      </h2>
-      <!-- Swiper -->
-      <div class="swiper mySwiper bg-transparent p-2 sm:p-8 w-full">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
-            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 1" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold text-white">Episode 1: Microsoft Azure Deep Dive</div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
-            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 2" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold text-white">Episode 2: Power Platform in Action</div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
-            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 3" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold text-white">Episode 3: Modern Workplace with Microsoft 365</div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
-            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 4" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold text-white">Episode 4: Security in the Cloud</div>
-          </div>
-          <!-- Slide 5 -->
-          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
-            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 5" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold text-white">Episode 5: AI & Copilot for Developers</div>
-          </div>
-        </div>
-        <!-- Swiper Controls -->
-        <div class="swiper-pagination !bottom-6"></div>
-        <div class="swiper-button-next !text-blue-900 !hover:text-blue-500" aria-label="Next slide"></div>
-        <div class="swiper-button-prev !text-blue-900 !hover:text-blue-500" aria-label="Previous slide"></div>
+
+     <!-- Swiper Container -->
+
+   <div class="relative">
+    <div class="swiper mySwiper w-full">
+      <div class="swiper-wrapper" id="podcast-grid">
+        <!-- Slides will be inserted here by JS -->
       </div>
+    <!-- Arrows (Navigation buttons) -->
+    <div style="color: antiquewhite;" class="swiper-button-prev !text-white !left-0 z-10"></div>
+    <div style="color: antiquewhite;" class="swiper-button-next !text-white !right-0 z-10"></div>
+
     </div>
-  </section>
+    </div>
+        </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Modal -->
+<div id="video-modal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50">
+  <!-- <div class="bg-black w-full max-w-3xl mx-auto aspect-video relative"> -->
+    <div class="bg-black w-full max-w-5xl mx-auto aspect-video relative">
+
+    <iframe id="modal-iframe" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-3xl">&times;</button>
+  </div>
+</div>
+
+ <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- SwiperJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+  function getYouTubeVideoId(url) {
+    const regExp = /(?:youtube\.com\/.*v=|youtu\.be\/)([^&?]+)/;
+    const match = url.match(regExp);
+    return match ? match[1] : null;
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("video-modal");
+    const iframe = document.getElementById("modal-iframe");
+    iframe.src = "";
+    modal.classList.add("hidden");
+  }
+
+  function openModal(videoId) {
+    const modal = document.getElementById("video-modal");
+    const iframe = document.getElementById("modal-iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    modal.classList.remove("hidden");
+  }
+
+  // Load CSV and generate cards
+  fetch("podcasts.csv")
+    .then(response => response.text())
+   .then(csv => {
+  const data = Papa.parse(csv, { header: true }).data;
+  console.log("Parsed CSV Data:", data); 
+
+  const container = document.getElementById("podcast-grid");
+
+  data.forEach(podcast => {
+    const videoId = getYouTubeVideoId(podcast.video_url);
+    console.log("Video ID:", videoId); 
+
+    if (!videoId) return;
+
+    // const card = document.createElement("div");
+    // card.className = "cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
+    const card = document.createElement("div");
+card.className = "swiper-slide cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
+
+    card.innerHTML = `
+      <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${podcast.title}" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-white">${podcast.title}</h3>
+      </div>
+    `;
+
+    card.addEventListener("click", () => openModal(videoId));
+    container.appendChild(card);
+  });
+});
+
+</script>
+
+
+
+<script>
+// After appending all slides
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1200, 
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.2,
+    },
+    768: {
+      slidesPerView: 3.2,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
+});
+
+</script>
+
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 mt-12">
@@ -124,50 +278,20 @@
     </div>
   </footer>
 
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        speed: 800, // Smooth transition speed (ms)
-        autoplay: {
-            delay: 3000, // Wait 3s before auto-advance
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true // Swiper 11+ supports this
-        },
-        grabCursor: true,
-        centeredSlides: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            1280: {
-                slidesPerView: 3,
-            },
-        },
-    });
 
-    // For Swiper versions before 11, fallback for pause on hover:
-    const swiperEl = document.querySelector('.mySwiper');
-    swiperEl.addEventListener('mouseenter', () => {
-        swiper.autoplay.stop();
-    });
-    swiperEl.addEventListener('mouseleave', () => {
-        swiper.autoplay.start();
-    });
-</script>
+  </script> 
+<!-- Centered Video Below -->
+<div class="centered-video-container">
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2lehPYCyvyE?si=RgydA6JMX7mh1hic"
+   title="YouTube video player"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+    loading="lazy" -->
+    
+</iframe>
+</div>
+
 </body>
 </html>
