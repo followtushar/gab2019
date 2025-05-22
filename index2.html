@@ -14,7 +14,7 @@
           rgba(13, 42, 148, 0.7),
           rgba(13, 42, 148, 0.7)
         ),
-        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')
+        url('./Photos/podcast.jpg')
           no-repeat center center/cover;
     }
     .swiper-wrapper {
@@ -24,42 +24,47 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- Hero / Header Fullscreen -->
-<header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto">
-        <!-- Left: Text -->
-        <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left py-12">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg max-w-4xl leading-tight">
-                12 Reason Why with Tech Experts
+<!-- Hero / Header Fullscreen -->
+<header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl mx-auto">
+        <!-- Left: Optionally add an image here for large screens -->
+        <div class="md:w-1/2 flex justify-center py-12"></div>
+        <!-- Right: Text -->
+        <div class="md:w-1/2 flex flex-col items-center md:items-end text-center md:text-right py-12">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg max-w-full leading-tight">
+                "12 Reason Why"
             </h1>
-            <p class="mt-6 text-xl md:text-2xl text-blue-200 max-w-3xl drop-shadow-md">
+            <h2 class="text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg max-w-full leading-tight text-blue-200">
+                <span class="text-xl sm:text-2xl md:text-4xl align-top">with</span>
+                <span class="text-white">Tech Experts</span>
+            </h2>
+            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-blue-200 max-w-2xl drop-shadow-md">
                 Dive deep into Microsoft technology with industry leaders and innovators
             </p>
             <a href="#about" class="mt-10 inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-100 transition">
                 🎧 Know More 
             </a>
         </div>
-        <!-- Right: Image -->
-        <div class="md:w-1/2 flex justify-center py-12">
-            <img src="Photos/tkimage.png" alt="Tech Expert" class="rounded-xl shadow-2xl w-80 h-80 object-cover" />
-        </div>
     </div>
-</header></div>
+</header>
 
   <!-- About Section Full Width with Image -->
-  <section id="about" class="w-full bg-white py-16 flex flex-col md:flex-row items-center max-w-screen-xl mx-auto px-6 gap-12">
-    <div class="md:w-1/2">
-      <h2 class="text-3xl font-bold text-blue-900 mb-6">
+  <section id="about" class="w-full bg-white py-16 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-4 sm:px-6 gap-12">
+    <div class="md:w-1/2 w-full">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
         About the Podcast
       </h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
+      <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
         <strong>12 Reason Why with Tech Experts</strong> is your go-to podcast for everything Microsoft technology. Featuring candid conversations with MVPs, developers, and IT pros, we explore the top reasons why Microsoft’s ecosystem is transforming the tech landscape. Stay ahead with insights, tips, and stories that empower your career and projects.
       </p>
+      <a href="https://sessionize.com" target="_blank" rel="noopener" class="mt-8 inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+        Submit Your Session on Sessionize
+      </a>
     </div>
-    <div class="md:w-1/2">
+    <div class="md:w-1/2 w-full">
       <img
-        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
-        alt="Podcast discussion"
+        src="./Photos/cfs.gif"
+        alt="Podcast discussion animated"
         class="rounded-xl shadow-lg w-full object-cover max-h-96"
       />
     </div>
@@ -67,37 +72,37 @@
 
   <!-- YouTube Podcast Carousel Full Width -->
   <section class="w-full bg-gradient-to-r from-blue-900 to-blue-700 py-16">
-    <div class="max-w-screen-xl mx-auto px-6">
-      <h2 class="text-white text-3xl font-bold mb-10 text-center drop-shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-white text-2xl sm:text-3xl font-bold mb-10 text-center drop-shadow-lg">
         Watch Our Podcast Episodes
       </h2>
       <!-- Swiper -->
-      <div class="swiper mySwiper rounded-xl shadow-2xl bg-white p-8">
+      <div class="swiper mySwiper bg-transparent p-2 sm:p-8 w-full">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
-          <div class="swiper-slide flex flex-col items-center p-4">
-            <iframe class="rounded-lg shadow-lg w-full" height="215" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 1" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold">Episode 1: Microsoft Azure Deep Dive</div>
+          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
+            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 1" frameborder="0" allowfullscreen></iframe>
+            <div class="mt-2 text-center font-semibold text-white">Episode 1: Microsoft Azure Deep Dive</div>
           </div>
           <!-- Slide 2 -->
-          <div class="swiper-slide flex flex-col items-center p-4">
-            <iframe class="rounded-lg shadow-lg w-full" height="215" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 2" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold">Episode 2: Power Platform in Action</div>
+          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
+            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 2" frameborder="0" allowfullscreen></iframe>
+            <div class="mt-2 text-center font-semibold text-white">Episode 2: Power Platform in Action</div>
           </div>
           <!-- Slide 3 -->
-          <div class="swiper-slide flex flex-col items-center p-4">
-            <iframe class="rounded-lg shadow-lg w-full" height="215" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 3" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold">Episode 3: Modern Workplace with Microsoft 365</div>
+          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
+            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 3" frameborder="0" allowfullscreen></iframe>
+            <div class="mt-2 text-center font-semibold text-white">Episode 3: Modern Workplace with Microsoft 365</div>
           </div>
           <!-- Slide 4 -->
-          <div class="swiper-slide flex flex-col items-center p-4">
-            <iframe class="rounded-lg shadow-lg w-full" height="215" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 4" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold">Episode 4: Security in the Cloud</div>
+          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
+            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 4" frameborder="0" allowfullscreen></iframe>
+            <div class="mt-2 text-center font-semibold text-white">Episode 4: Security in the Cloud</div>
           </div>
           <!-- Slide 5 -->
-          <div class="swiper-slide flex flex-col items-center p-4">
-            <iframe class="rounded-lg shadow-lg w-full" height="215" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 5" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-2 text-center font-semibold">Episode 5: AI & Copilot for Developers</div>
+          <div class="swiper-slide flex flex-col items-center p-2 sm:p-4 w-full">
+            <iframe class="rounded-lg shadow-lg w-full aspect-video" src="https://www.youtube.com/embed/UTOj3ndkIk0?si=tt8V90SqViJVqcAz" title="Episode 5" frameborder="0" allowfullscreen></iframe>
+            <div class="mt-2 text-center font-semibold text-white">Episode 5: AI & Copilot for Developers</div>
           </div>
         </div>
         <!-- Swiper Controls -->
@@ -110,7 +115,7 @@
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 mt-12">
-    <div class="container mx-auto px-6 text-center text-sm select-none">
+    <div class="container mx-auto px-4 text-center text-sm select-none">
       &copy; 2025 12 Reason Why with Tech Experts. All rights reserved.
     </div>
   </footer>
@@ -119,8 +124,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 20,
       loop: true,
       loopedSlides: 5,
       speed: 6000,
@@ -142,7 +147,7 @@
         640: {
           slidesPerView: 1,
         },
-        1024: {
+        768: {
           slidesPerView: 2,
         },
         1280: {
