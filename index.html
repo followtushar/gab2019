@@ -11,11 +11,15 @@
   <style>
     .hero-bg {
       background: linear-gradient(
-          rgba(13, 42, 148, 0.7),
-          rgba(13, 42, 148, 0.7)
+          rgba(13, 42, 148, 0.3),
+          rgba(13, 42, 148, 0.3)
         ),
-        url('./Photos/podcast.jpg')
+        url('./Photos/bg.gif')
           no-repeat center center/cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* GIFs loop by default when displayed as backgrounds */
     }
     .swiper-wrapper {
       transition-timing-function: linear !important;
