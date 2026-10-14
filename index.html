@@ -1,333 +1,375 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>12 Reason Why with Tech Experts</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Swiper Carousel CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-  <!-- PapaParse -->
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <title>12 Reasons Why with Tech Experts | The Podcast</title>
+  <meta name="description" content="12 Reasons Why with Tech Experts - candid conversations with MVPs, developers and IT pros on why Microsoft technology matters. One technology, one expert, twelve reasons." />
+  <meta name="theme-color" content="#06070b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="12 Reasons Why with Tech Experts" />
+  <meta property="og:description" content="One technology. One expert. Twelve reasons why. A podcast about Microsoft technology." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233ee0ff'/%3E%3Cstop offset='.5' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23ff3366'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23fff'%3E12%3C/text%3E%3C/svg%3E" />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1D0RH1TWZ6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1D0RH1TWZ6');
-</script>
-
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-<style>
-  .hero-bg {
-    background: linear-gradient(
-        rgba(237, 239, 247, 0.3),
-        rgba(13, 42, 148, 0.3)
-      ),
-      url('./Photos/bg.gif')
-        no-repeat center center/cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* GIFs loop by default when displayed as backgrounds */
-  }
-  .swiper-wrapper {
-    transition-timing-function: linear !important;
-  }
-  body {
-    background: linear-gradient(to bottom right,  #3d351a, #1e3a8a);
-  }
-  #podcaster-image {
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  @media (max-width: 640px) {
-    .hero-bg {
-      background: linear-gradient(
-          rgba(237, 239, 247, 0.938),
-          rgba(13, 42, 148, 0.938)
-        ),
-        url('./Photos/bg.gif')
-          no-repeat center center/cover;
-    }
-  }
-
-
-
-
-.centered-video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.centered-video-container iframe {
-  width: 90%;
-  max-width: 800px;
-  aspect-ratio: 16 / 9;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
-}
-
-
-    .swiper {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-}
-
-@media (max-width: 768px) {
-  .swiper-slide {
-    padding: 10px;
-  }
-}
-
-
-    
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-900">
-
-<!-- Hero / Header Fullscreen -->
-<header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6">
-    <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl mx-auto">
-        <!-- Left: Optionally add an image here for large screens -->
-        <div class="md:w-1/2 flex justify-center py-12"></div>
-        <!-- Right: Text -->
-        <div class="md:w-1/2 flex flex-col items-center md:items-end text-center md:text-right py-12">
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg max-w-full leading-tight">
-                <span>
-                  <span class="inline-block animate-bounce font-extrabold" style="color:#ff3366;">1</span>
-                  <span class="inline-block animate-bounce font-extrabold" style="color:#ff3366;">2</span>
-                </span>
-                 Reasons Why
-            </h1>
-     
-
-           <h2 class="text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg max-w-full leading-tight text-blue-200">
-                <span class="text-xl sm:text-2xl md:text-4xl align-top">with</span>
-                <span class="text-white">Tech Experts</span>
-            </h2>
-
-
-            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-blue-200 max-w-2xl drop-shadow-md" data-aos="zoom-in-up">
-                Dive deep into Microsoft technology with industry leaders and innovators
-            </p>
-            <a href="#about" class="mt-10 inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-100 transition" data-aos="zoom-in">
-                🎧 Know More 
-            </a>
-        </div>
-    </div>
-</header>
-
-  <!-- About Section Full Width with Image -->
-  <section id="about" class="w-full bg-white py-16 flex flex-col md:flex-row items-center max-auto mx-auto px-4 sm:px-6 gap-12">
-    <div class="md:w-1/2 w-full">
-      <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 hover:bg-blue-100"data-aos="fade-up"  data-aos-duration="1200">
-        About the Podcast
-      </h2>
-      <p class="text-gray-700 text-base sm:text-lg leading-relaxed" data-aos="fade-up"  data-aos-duration="1600">
-        <strong>12 Reason Why with Tech Experts</strong> is your go-to podcast for everything Microsoft technology. Featuring candid conversations with MVPs, developers, and IT pros, we explore the top reasons why Microsoft’s ecosystem is transforming the tech landscape. Stay ahead with insights, tips, and stories that empower your career and projects.
-      </p>
-      <a href="https://sessionize.com/12-reasons-why-with-tech-experts-co/" target="_blank" rel="noopener" class="mt-8 inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition" data-aos="zoom-in-up" data-aos-duration="2000">
-        Submit Your Session on Sessionize
-      </a>
-      <div class="flex flex-wrap gap-4 mt-6" data-aos="zoom-in-up" data-aos-duration="2200">
-        <a href="https://www.youtube.com/@TheAzWay" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-3 rounded-full shadow-lg transition">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M21.8 8.001a2.75 2.75 0 0 0-1.93-1.94C18.1 6 12 6 12 6s-6.1 0-7.87.06A2.75 2.75 0 0 0 2.2 8.001 28.7 28.7 0 0 0 2 12a28.7 28.7 0 0 0 .2 3.999 2.75 2.75 0 0 0 1.93 1.94C5.9 18 12 18 12 18s6.1 0 7.87-.06a2.75 2.75 0 0 0 1.93-1.94A28.7 28.7 0 0 0 22 12a28.7 28.7 0 0 0-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"/>
-          </svg>
-          Find us on YouTube
-        </a>
-        <a href="https://www.instagram.com/azway_bytes/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 text-white font-semibold px-5 py-3 rounded-full shadow-lg transition">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm6 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-          </svg>
-          Instagram
-        </a>
-      </div>
-
-    </div>
-    <div class="md:w-1/2 w-full">
-      <img
-        src="./Photos/cfs.gif" loading="lazy"
-        alt="Podcast discussion animated"
-        class="rounded-xl shadow-lg w-full object-cover h-full"
-      />
-    </div>
-  </section>
-
-
-  <section class="py-16 bg-gray-950 text-white">
-  <div class="max-auto mx-auto px-2">
-    <h2 class="text-4xl font-bold mb-10 text-center">🎙️ Featured Podcasts</h2>
-     <!-- Swiper Container -->
-
-   <div class="relative">
-    <div class="swiper mySwiper w-full">
-      <div class="swiper-wrapper" id="podcast-grid">
-        <!-- Slides will be inserted here by JS -->
-      </div>
-    <!-- Arrows (Navigation buttons) -->
-    <div style="color: antiquewhite;" class="swiper-button-prev !text-white !left-0 z-10"></div>
-    <div style="color: antiquewhite;" class="swiper-button-next !text-white !right-0 z-10"></div>
-
-    </div>
-    </div>
-        </div>
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-6"></div>
-    </div>
-  </div>
-
-</section>
-
-
-<!-- Modal -->
-<div id="video-modal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50">
-  <!-- <div class="bg-black w-full max-w-3xl mx-auto aspect-video relative"> -->
-    <div class="bg-black w-full max-w-5xl mx-auto aspect-video relative">
-
-    <iframe id="modal-iframe" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-    <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-3xl">&times;</button>
-  </div>
-</div>
-
- <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Flag JS early so the loader and motion states only apply when scripts run -->
   <script>
-    AOS.init();
+    document.documentElement.classList.add('js');
+    setTimeout(function () { document.documentElement.classList.add('is-loaded'); }, 4000);
   </script>
 
-  <!-- SwiperJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1D0RH1TWZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1D0RH1TWZ6');
+  </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://i.ytimg.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
-<script>
-  function getYouTubeVideoId(url) {
-    const regExp = /(?:youtube\.com\/.*v=|youtu\.be\/)([^&?]+)/;
-    const match = url.match(regExp);
-    return match ? match[1] : null;
-  }
+  <!-- Intro loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__count">00</span>
+      <span class="loader__label">Tuning in</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
 
-  function closeModal() {
-    const modal = document.getElementById("video-modal");
-    const iframe = document.getElementById("modal-iframe");
-    iframe.src = "";
-    modal.classList.add("hidden");
-  }
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
 
-  function openModal(videoId) {
-    const modal = document.getElementById("video-modal");
-    const iframe = document.getElementById("modal-iframe");
-    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-    modal.classList.remove("hidden");
-  }
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  // Load CSV and generate cards
-  fetch("podcasts.csv")
-    .then(response => response.text())
-   .then(csv => {
-  const data = Papa.parse(csv, { header: true }).data;
-  console.log("Parsed CSV Data:", data); 
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="12 Reasons Why - home">
+        <span class="brand__mark">12</span>
+        <span class="brand__word">Reasons Why<small>with Tech Experts</small></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#format">The format</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#host">Host</a>
+        <a href="#guest" class="btn btn--small btn--glass">Be a guest</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-  const container = document.getElementById("podcast-grid");
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#format"><span>01</span>The format</a>
+      <a href="#episodes"><span>02</span>Episodes</a>
+      <a href="#host"><span>03</span>Host</a>
+      <a href="#guest"><span>04</span>Be a guest</a>
+    </nav>
+  </div>
 
-  data.forEach(podcast => {
-    const videoId = getYouTubeVideoId(podcast.video_url);
-    console.log("Video ID:", videoId); 
+  <main id="main">
 
-    if (!videoId) return;
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <canvas class="hero__waves" id="waves" aria-hidden="true"></canvas>
+      <div class="orb orb--1" aria-hidden="true"></div>
+      <div class="orb orb--2" aria-hidden="true"></div>
+      <div class="orb orb--3" aria-hidden="true"></div>
 
-    // const card = document.createElement("div");
-    // card.className = "cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
-    const card = document.createElement("div");
-card.className = "swiper-slide cursor-pointer bg-gray-800 rounded-xl overflow-hidden hover:shadow-2xl transition";
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow" data-hero>
+            <span class="live"><span class="live__dot"></span>On air</span>
+            The Microsoft technology podcast
+          </p>
 
-    card.innerHTML = `
-      <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${podcast.title}" class="w-full h-full object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-semibold text-white">${podcast.title}</h3>
+          <h1 class="hero__title" aria-label="12 Reasons Why">
+            <span class="line" aria-hidden="true"><span class="num">12</span> <span class="split">Reasons</span></span>
+            <span class="line" aria-hidden="true"><span class="split">Why</span><span class="dot">.</span></span>
+          </h1>
+
+          <p class="hero__with" data-hero><span class="rule"></span>with Tech Experts</p>
+
+          <p class="hero__lede" data-hero>
+            Dive deep into Microsoft technology with industry leaders and innovators.
+            One technology, one expert, twelve reasons why it matters.
+          </p>
+
+          <div class="hero__actions" data-hero>
+            <button class="btn btn--primary" id="play-latest" data-magnetic>
+              <span class="btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+              Play latest episode
+            </button>
+            <a href="#guest" class="btn btn--ghost" data-magnetic>Be our next guest</a>
+          </div>
+
+          <div class="hero__proof" data-hero>
+            <div class="avatars" id="hero-avatars"></div>
+            <p><strong id="hero-count">Expert</strong> conversations and counting</p>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="false">
+          <div class="stage" id="stage">
+            <span class="stage__twelve" data-depth="0.25" aria-hidden="true">12</span>
+            <div class="stage__disc" data-depth="0.5"></div>
+            <svg class="stage__ring" data-depth="0.4" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="ring-path" d="M100,100 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0" /></defs>
+              <text><textPath href="#ring-path">12 REASONS WHY &#8226; WITH TECH EXPERTS &#8226; THE PODCAST &#8226;&#160;</textPath></text>
+            </svg>
+            <img class="stage__host" data-depth="0.8" src="Photos/tkimage.png" width="529" height="472"
+                 alt="Tushar, host of 12 Reasons Why, at the podcast microphone" fetchpriority="high" />
+            <div class="chip chip--rec" data-depth="1.2" aria-hidden="true"><span class="rec"></span>REC</div>
+            <div class="chip chip--eq" data-depth="1.4" aria-hidden="true">
+              <span class="eq"><i></i><i></i><i></i><i></i><i></i></span>Live session
+            </div>
+            <div class="chip chip--topic" data-depth="1" aria-hidden="true">
+              <span class="chip__k">Reason</span><span class="chip__v" id="chip-reason">01</span><span class="chip__k">/ 12</span>
+            </div>
+          </div>
+        </div>
       </div>
-    `;
 
-    card.addEventListener("click", () => openModal(videoId));
-    container.appendChild(card);
-  });
-});
+      <a href="#format" class="scroll-cue" aria-label="Scroll to the format">
+        <span class="scroll-cue__line"></span>
+        <span class="scroll-cue__text">Scroll</span>
+      </a>
+    </section>
 
-</script>
+    <!-- Topic marquee -->
+    <section class="marquee" aria-label="Topics covered">
+      <div class="marquee__track" id="marquee">
+        <div class="marquee__row">
+          <span>Azure Arc</span><i></i><span>Azure Virtual Network Manager</span><i></i><span>Azure AI Foundry</span><i></i>
+          <span>AI Platforms</span><i></i><span>Microsoft Intune</span><i></i>
+        </div>
+      </div>
+    </section>
 
+    <!-- Format -->
+    <section class="format" id="format">
+      <div class="container format__pin">
+        <div class="format__counter" aria-hidden="true">
+          <span class="format__num" id="format-num">01</span>
+          <span class="format__of">/12</span>
+          <div class="ticks" id="ticks"></div>
+        </div>
 
+        <div class="format__body">
+          <p class="eyebrow" data-reveal>The format</p>
+          <h2 class="format__title" data-split>
+            One technology. One expert. <span class="grad">Twelve reasons why.</span>
+          </h2>
+          <p class="format__intro" data-reveal>
+            <strong>12 Reasons Why with Tech Experts</strong> is your go-to podcast for everything Microsoft technology.
+            Candid conversations with MVPs, developers and IT pros on why Microsoft's ecosystem is reshaping the tech
+            landscape - with insights, tips and stories to power your career and your projects.
+          </p>
 
-<script>
-// After appending all slides
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1.2,
-  spaceBetween: 16,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 1200, 
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2.2,
-    },
-    768: {
-      slidesPerView: 3.2,
-    },
-    1024: {
-      slidesPerView: 4,
-    }
-  }
-});
+          <ol class="steps">
+            <li class="step">
+              <span class="step__n">01</span>
+              <div>
+                <h3>Pick the technology</h3>
+                <p>Every episode zooms in on a single Microsoft technology - from Azure Arc to Intune.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__n">02</span>
+              <div>
+                <h3>Bring the expert</h3>
+                <p>A practitioner who builds, runs and teaches it in the real world joins the conversation.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__n">03</span>
+              <div>
+                <h3>Make the case in twelve</h3>
+                <p>Twelve clear reasons, straight talk and practical takeaways for your next project.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-</script>
+    <!-- Episodes -->
+    <section class="episodes" id="episodes">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Episodes</p>
+            <h2 data-split>Latest conversations</h2>
+          </div>
+          <a class="link-arrow" href="https://www.youtube.com/@TheAzWay" target="_blank" rel="noopener" data-reveal>
+            All episodes on YouTube
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </header>
 
+        <article class="feature" id="feature" hidden>
+          <button class="feature__media" type="button" data-play>
+            <img class="feature__thumb" alt="" />
+            <span class="play play--lg" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+            <span class="feature__badge">New</span>
+          </button>
+          <div class="feature__info">
+            <p class="feature__meta"><span class="feature__ep"></span> &middot; Latest episode</p>
+            <h3 class="feature__topic"></h3>
+            <p class="feature__guest"></p>
+            <p class="feature__blurb"></p>
+            <button class="btn btn--primary" type="button" data-play data-magnetic>
+              <span class="btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+              Play episode
+            </button>
+          </div>
+        </article>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 mt-12">
-    <div class="container mx-auto px-4 text-center text-sm select-none">
-      &copy; 2025 12 Reason Why with Tech Experts. All rights reserved.
+        <div class="ep-grid" id="episode-grid"></div>
+
+        <p class="episodes__fallback" id="episodes-fallback" hidden>
+          Episodes could not be loaded right now.
+          <a href="https://www.youtube.com/@TheAzWay" target="_blank" rel="noopener">Watch them on YouTube</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Show in numbers">
+      <div class="container stats__grid">
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span data-count="12">12</span></span>
+          <span class="stat__label">Reasons per episode</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span data-count="0" id="stat-episodes">0</span></span>
+          <span class="stat__label">Episodes released</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span data-count="0" id="stat-reasons">0</span></span>
+          <span class="stat__label">Reasons shared so far</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span data-count="0" id="stat-guests">0</span></span>
+          <span class="stat__label">Expert guests</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Host -->
+    <section class="host" id="host">
+      <div class="container host__grid">
+        <div class="host__visual" data-reveal>
+          <div class="portrait">
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__glow" aria-hidden="true"></div>
+            <img src="assets/img/host.png" width="472" height="472" loading="lazy" alt="Portrait of Tushar, host of the podcast" />
+          </div>
+          <svg class="host__badge" viewBox="0 0 120 120" aria-hidden="true">
+            <defs><path id="badge-path" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+            <text><textPath href="#badge-path">YOUR HOST &#8226; THE AZWAY &#8226; YOUR HOST &#8226; THE AZWAY &#8226;</textPath></text>
+          </svg>
+        </div>
+        <div class="host__copy">
+          <p class="eyebrow" data-reveal>Your host</p>
+          <h2 data-split>Meet <span class="grad">Tushar</span></h2>
+          <p data-reveal>
+            Creator of The AzWay and the voice behind 12 Reasons Why. Each episode, Tushar sits down with someone who
+            knows a Microsoft technology inside out and asks them to make the case - twelve reasons, no fluff.
+          </p>
+          <div class="socials" data-reveal>
+            <a class="social social--yt" href="https://www.youtube.com/@TheAzWay" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 8a2.75 2.75 0 0 0-1.93-1.94C18.1 6 12 6 12 6s-6.1 0-7.87.06A2.75 2.75 0 0 0 2.2 8 28.7 28.7 0 0 0 2 12a28.7 28.7 0 0 0 .2 4 2.75 2.75 0 0 0 1.93 1.94C5.9 18 12 18 12 18s6.1 0 7.87-.06A2.75 2.75 0 0 0 21.8 16 28.7 28.7 0 0 0 22 12a28.7 28.7 0 0 0-.2-4zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+              <span><strong>YouTube</strong><small>@TheAzWay</small></span>
+            </a>
+            <a class="social social--ig" href="https://www.instagram.com/azway_bytes/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5zM12 6.75a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.5-2.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+              <span><strong>Instagram</strong><small>@azway_bytes</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call for guests -->
+    <section class="cta" id="guest">
+      <div class="cta__scroller" aria-hidden="true">
+        <span>Got twelve reasons?</span><span class="outline">Got twelve reasons?</span>
+      </div>
+      <div class="container cta__inner">
+        <p class="eyebrow" data-reveal>Call for guests</p>
+        <h2 data-split>Be our next <span class="grad">tech expert.</span></h2>
+        <p class="cta__text" data-reveal>
+          Know a Microsoft technology inside out? Pitch your topic on Sessionize and make your case on the show.
+        </p>
+        <div class="cta__actions" data-reveal>
+          <a class="btn btn--primary btn--lg" href="https://sessionize.com/12-reasons-why-with-tech-experts-co/" target="_blank" rel="noopener" data-magnetic>
+            Submit your session on Sessionize
+            <span class="btn__icon btn__icon--end"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="brand" aria-label="Back to top">
+          <span class="brand__mark">12</span>
+          <span class="brand__word">Reasons Why<small>with Tech Experts</small></span>
+        </a>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#format">The format</a>
+          <a href="#episodes">Episodes</a>
+          <a href="#host">Host</a>
+          <a href="https://sessionize.com/12-reasons-why-with-tech-experts-co/" target="_blank" rel="noopener">Sessionize</a>
+          <a href="https://www.youtube.com/@TheAzWay" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.instagram.com/azway_bytes/" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+      </div>
+      <p class="footer__word" aria-hidden="true">12 Reasons Why</p>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year">2026</span> 12 Reasons Why with Tech Experts. All rights reserved.</span>
+        <a href="#top" class="to-top">Back to top &uarr;</a>
+      </div>
     </div>
   </footer>
 
+  <!-- Video player -->
+  <dialog class="player" id="player" aria-label="Episode player">
+    <div class="player__frame" id="player-frame"></div>
+    <button class="player__close" type="button" aria-label="Close player">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </dialog>
 
-  </script> 
-<!-- Centered Video Below -->
-<div class="centered-video-container">
-  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2lehPYCyvyE?si=RgydA6JMX7mh1hic"
-   title="YouTube video player"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen
-    loading="lazy" -->
-    
-</iframe>
-</div>
+  <!-- Episode card template -->
+  <template id="tpl-episode">
+    <article class="ep">
+      <button class="ep__media" type="button" data-play>
+        <img class="ep__thumb" alt="" loading="lazy" />
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+      </button>
+      <div class="ep__body">
+        <p class="ep__meta"><span class="ep__no"></span><span class="ep__tag">12 reasons</span></p>
+        <h3 class="ep__topic"></h3>
+        <p class="ep__guest"></p>
+      </div>
+    </article>
+  </template>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
